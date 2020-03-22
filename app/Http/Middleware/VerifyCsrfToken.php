@@ -17,6 +17,8 @@ class VerifyCsrfToken extends Middleware
 	protected $except = [
 		// entry point...
 		'/php/index.php',
+		// list public albums
+		'/api/Album::get',
 	];
 
 	/**
